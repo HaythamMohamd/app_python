@@ -53,3 +53,19 @@ gunicorn wsgi
 ```
 
 testing main branch branch
+# git
+
+```bash
+# 01- create a repo at github and git these commands
+git remote add origin https://github.com/HaythamMohamd/app_python.git
+git branch -M main
+git push -u origin main
+# 02- at local repo
+git init
+git add -A
+git commit -m "Intial commit"
+git log --oneline --graph --decorate
+git log
+```
+
+testing feature branch
