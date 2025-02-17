@@ -66,6 +66,17 @@ git add -A
 git commit -m "Intial commit"
 git log --oneline --graph --decorate
 git log
+git checkout feature
+git checkout -b feature
+git add -A
+git commit -m "Changed readme from feature branch"
+git switch main
+git commit -am "Changed readme from main branch"
+git merge feature
+git commit -am "Accepted two changes from main and feature branch"
+git push
+git checkout  feature
+git push --set-upstream origin feature
 ```
 
 testing feature branch
