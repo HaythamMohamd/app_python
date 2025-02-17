@@ -53,6 +53,7 @@ gunicorn wsgi
 ```
 
 testing main branch branch
+
 # git
 
 ```bash
@@ -77,6 +78,17 @@ git commit -am "Accepted two changes from main and feature branch"
 git push
 git checkout  feature
 git push --set-upstream origin feature
+
+git reset
+git revert
+
+git tag v1.0.0
+git push --tags
+
+git stash
+git stash pop
+
+git reflog
 ```
 
 testing feature branch
