@@ -91,4 +91,20 @@ git stash pop
 git reflog
 ```
 
-testing feature branch
+# Testing
+
+```bash
+# create test/test_index.py
+from main import app
+
+
+def test_index():
+    with app.test_client() as test_client:
+        response = test_client.get("/")
+        assert response.status_code == 200
+        assert b"time" in response.data
+
+pip install pytest
+pip freeze > requirments.txt\n
+python3 -m pytest
+```
